@@ -1,0 +1,18 @@
+On-call Runbook — Payments Service
+
+Primary on-call rotation: payments-primary. Secondary rotation: payments-backup.
+Shifts swap every Wednesday at 10:00 UTC.
+
+Escalation policy
+If the p99 latency alert for /checkout exceeds 800ms for 5 minutes, page the
+primary rotation immediately. If the alert persists for 15 minutes, escalate to
+the payments-backup rotation and post in #payments-incident.
+
+Rollback procedure
+Deployments are released with Argo Rollouts. To roll back, run:
+  argo rollouts undo payments-api -n production
+then verify the canary in the payments-dashboard Grafana board.
+
+Contact
+The engineering manager for payments is Dana Okafor. Reach Dana on Slack via
+@dana.okafor for anything not covered by this runbook.

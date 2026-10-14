@@ -1,0 +1,80 @@
+{
+  "documents": [
+    "sample_docs/kestrel_platform.md",
+    "sample_docs/payments_runbook.txt",
+    "sample_docs/handbook.md"
+  ],
+  "questions": [
+    {
+      "id": "ans-1",
+      "type": "answerable",
+      "question": "How long is raw event data retained in Kestrel?",
+      "expect_any": ["90 days"]
+    },
+    {
+      "id": "ans-2",
+      "type": "answerable",
+      "question": "What is the laptop voucher amount for new hires?",
+      "expect_any": ["2,400 USD", "2400 USD", "2,400"]
+    },
+    {
+      "id": "ans-3",
+      "type": "answerable",
+      "question": "Which SSO group grants access to Kestrel?",
+      "expect_any": ["kestrel-users"]
+    },
+    {
+      "id": "ans-4",
+      "type": "answerable",
+      "question": "When do on-call shifts for the payments service rotate?",
+      "expect_any": ["Wednesday", "10:00 UTC"]
+    },
+    {
+      "id": "ans-5",
+      "type": "answerable",
+      "question": "How many days per week may employees work remotely?",
+      "expect_any": ["3 days", "three days"]
+    },
+    {
+      "id": "unans-1",
+      "type": "unanswerable",
+      "question": "What is the company's quarterly revenue for Q3 2026?"
+    },
+    {
+      "id": "unans-2",
+      "type": "unanswerable",
+      "question": "Which database engine does Kestrel use for storage?"
+    },
+    {
+      "id": "unans-3",
+      "type": "unanswerable",
+      "question": "What programming language is the payments service written in?"
+    },
+    {
+      "id": "unans-4",
+      "type": "unanswerable",
+      "question": "How much is the annual learning and development budget per employee?"
+    },
+    {
+      "id": "multi-1",
+      "type": "multi",
+      "question": "What laptop budget do new hires get, and in which month do salary reviews happen?",
+      "expect_all": ["2,400", "October"],
+      "min_sources": 2
+    },
+    {
+      "id": "multi-2",
+      "type": "multi",
+      "question": "How do you roll back a payments deployment, and who is the payments engineering manager?",
+      "expect_all": ["undo", "Dana Okafor"],
+      "min_sources": 2
+    },
+    {
+      "id": "multi-3",
+      "type": "multi",
+      "question": "What are Kestrel's SOX compliance retention requirements, and how many days of minimum PTO does the handbook require?",
+      "expect_all": ["7 years", "15 days"],
+      "min_sources": 2
+    }
+  ]
+}

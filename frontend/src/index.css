@@ -1,0 +1,116 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f6f7f9;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e4e8;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.doc-list,
+.source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.doc-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.source-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+blockquote {
+  margin: 0.35rem 0 0;
+  padding: 0.5rem 0.75rem;
+  background: #f6f7f9;
+  border-left: 3px solid #c9ced6;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.ask-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type='text'],
+.ask-form input:not([type]) {
+  flex: 1;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #c9ced6;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.link {
+  background: none;
+  color: #b91c1c;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.status {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: #166534;
+}
+
+.unavailable {
+  color: #92400e;
+  background: #fef3c7;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin: 0.5rem 0 0;
+}
